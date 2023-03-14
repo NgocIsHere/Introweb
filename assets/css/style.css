@@ -8,28 +8,30 @@
 html{
     font-family: Helvetica, Arial, sans-serif;
 }
+
 body {
-    background-image: url("https://zda.vn/wp-content/uploads/2023/01/hinh-anh-con-sua-bien.jpg");
-    background-color: #ccc;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #ffffff;
+    height: 7000px;
+    
 }
-#wrapper {
-    height:10000px;
+.wrapper {
+    height: 100%;
+    display: block;
 }
 #header {
-    height: 46px;
-    background-color: #000;
+    height: 1%;
+    opacity: 0.7;
     position: fixed;
-    left:0;
-    right:0;
+    left: 30%;
     top:0;
+    text-decoration: none;
 }
 #nav{
     display: inline-block;
 }
 #nav, .subnav{
     list-style-type: none;
+    text-decoration: none;
 }
 #nav >li {
     display: inline-block;
@@ -38,53 +40,66 @@ body {
     position: relative;
 }
 #nav >li>button {
-    color: white;
-    text-transform: uppercase;
+    font-family: cursive;
+    font-size: medium;
+    background: #ffffff;
 }
-#nav li button,a{
+#nav li button, b,a{
     text-decoration: none;
-    line-height: 46px;
-    color: rgb(253, 255, 255);
-    background-color: #000;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: cursive;
+    font-size: medium;
+    color: black;
     padding: 0 24px ;
     display: block;
+    border: none;
+}
+
+#nav > li:hover > button{
+    color: #009966;
+    font-size: large;
+}
+#nav > li:hover > b{
+    color: #009966;
+    font-size: large;
 }
 #nav >li:hover .subnav{
     display: block;
 }
-#nav > li:hover > button{
-    color: #000;
-    background-color: #ccc;
-    
-}
-
-#nav .subnav{
+#nav .subnav {
     display: none;
-    position: absolute;
-    box-shadow: 0 0 10px rgba(232, 224, 224, 0.8);
-    background-color: #ccc;
-}
-#nav .subnav li:hover{
+    text-decoration: none;
+    line-height: 50px;
+    position: fixed;
     color: #000;
-    background-color: #000;
+    font-family: cursive;
+    font-size: medium;
+}
+#nav .subnav li:hover a{
+    font-size: large;
+    color: #009966;
+}
+#Ngọc {
+    height: 50%;  
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    display: block;
+    top: 50%;
+}
+#About {
+    height: 1000px;
+}
+#About .shape {
+    height: 100%;
+    width: 100%;
+    top: 1050px;
 }
 
-#slider {
-    height: auto;
-}
-img {
-    opacity: 0.8;
-    box-shadow: 0 0 10px rgb(250, 246, 246);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 .line-1{
     position: relative;
-    top: 300px;  
+    top: -450px;  
     width: 12em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -110,7 +125,7 @@ img {
   }
 #header .search-button{
     float: right;
-    line-height: 46px;
+    line-height: 50px;
     font-size: 180%;
     top: 10px;
     background-color: red;
@@ -122,9 +137,10 @@ img {
     background-color: #ccc;
 }
 #content {
-    height: auto;
+    height: 1000px;
 }
 #footer{
+    background-color: rgb(14, 14, 71);
     height: auto;
 
 }
